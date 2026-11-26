@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Parent Component">
+
+        <lightning-button onclick={displayClick} label="Click me">
+        </lightning-button>
+
+        <template lwc:if={isVisible}>
+            <c-child-component></c-child-component>
+        </template>
+
+    </lightning-card>
+</template>
